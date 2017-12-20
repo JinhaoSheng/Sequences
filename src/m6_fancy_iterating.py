@@ -534,7 +534,7 @@ def print_items_that_are_odd_integers(sequence):
     # ------------------------------------------------------------------
 
     for k in range(len(sequence)):
-        if sequence[k] is int:
+        if type(sequence[k]) is int:
             if sequence[k] % 2 != 0:
                 print(sequence[k], "is at index", k)
 
